@@ -1,0 +1,65 @@
+.center {
+    margin: 0;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+.searchgrid {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+}
+
+.googlelogo {
+    display: block;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+ .input-icons i {
+    position: absolute;
+    display: block;
+    margin: auto;
+} 
+  
+.input-icons {
+    width: 100%;
+    margin-bottom: 10px;
+}
+  
+.icon {
+    padding: 15px;
+    color: rgb(163, 163, 163);
+    min-width: 40px;
+    text-align: left;
+}
+  
+.input-field {
+    width: 100%;
+    padding-left: 40px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: left;
+    border-radius: 25px;
+    border: 1px solid rgb(224, 224, 224);
+    width: 30vw;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .input-field {
+      width: 80vw;
+    }
+  }
+
+  .input-field:hover {
+    box-shadow:1px 1px 1px 1px rgb(211, 211, 211);
+  }
+
+  .input-field:focus {
+    outline: none !important;
+    box-shadow:1px 1px 1px 1px rgb(211, 211, 211);
+  }
