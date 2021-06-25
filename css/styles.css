@@ -63,3 +63,42 @@
     outline: none !important;
     box-shadow:1px 1px 1px 1px rgb(211, 211, 211);
   }
+
+  .menu {
+    text-align: right;
+    padding-right: 10px;
+    padding-top: 5px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+    display: flex;
+    justify-content:flex-end;
+    align-items:center;
+  }
+
+  .menu a {
+    text-decoration: none;
+    color: black;
+    padding-left: 6px;
+    vertical-align: middle;
+  }
+
+  .menu a:hover {
+    text-decoration: underline;
+  }
+
+  .dotsicon {
+    width: 20px;
+    height: 20px;
+    padding-left: 15px;
+    padding-right: 21px;
+  }
+
+  .signbutton {
+    padding-left: 6px;
+    color: white;
+    padding: 10px 25px 10px 25px;
+    background-color: #1a73e8;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    font-size: 15px;
+  }
