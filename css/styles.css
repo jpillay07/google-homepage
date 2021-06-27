@@ -1,3 +1,14 @@
+.html {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.body{
+  max-width: 100%;
+  overflow-x: hidden;
+
+}
+
 .center {
     margin: 0;
     position: absolute;
@@ -5,7 +16,7 @@
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-  }
+}
 
 .searchgrid {
     display: grid;
@@ -53,7 +64,7 @@
     .input-field {
       width: 80vw;
     }
-  }
+}
 
   .input-field:hover {
     box-shadow:1px 1px 1px 1px rgb(211, 211, 211);
@@ -101,4 +112,152 @@
     border-radius: 5px;
     border: 1px solid transparent;
     font-size: 15px;
+  }
+
+  .googlefooter {
+    display: grid;
+    position: fixed;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    background-color: #f2f2f2;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    'header header header'
+    'quick neutral privacy';
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+
+  }
+
+  
+
+  .country {
+    grid-area: header;
+    border-bottom: 1px solid #dadce0;
+    padding: 15px 25px 15px 25px;
+    text-decoration: none;
+    color: rgba(0,0,0,.54);
+  }
+
+  .quicklinks {
+    grid-area: quick;
+    align-self: center;
+    padding: 15px 25px 15px 25px;
+  }
+
+  .quicklinks a {
+    text-decoration: none;
+    color: #70757a;
+    padding-right: 20px;
+  }
+
+  .quicklinks a:hover {
+    text-decoration: underline;
+  }
+
+  .carbon {
+    grid-area: neutral;
+    justify-self: center;
+    color: #70757a;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  .carbon:hover {
+    text-decoration: underline;
+  }
+
+  .carbonleaf {
+    width: 12px;
+    padding-right: 5px;
+  }
+
+  .policies {
+    grid-area: privacy;
+    justify-self: end;
+    padding: 10px 25px 10px 25px;
+  }
+
+  .policies a {
+    text-decoration: none;
+    padding-right: 20px;
+    color: #70757a;
+  }
+
+  .policies a:hover {
+    text-decoration: underline;
+  }
+
+  @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .policies, .quicklinks {
+      justify-self: center;
+      padding: 15px;
+    }
+
+    .googlefooter {
+      display: grid;
+      position: fixed;
+      bottom: 0%;
+      left: 0%;
+      right: 0%;
+      background-color: #f2f2f2;
+      grid-template-columns: auto;
+      grid-template-areas:
+      'header'
+      'neutral'
+      'quick'
+      'privacy';
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      overflow: hidden;
+      font-family: 'Rubik', sans-serif;
+      font-size: 14px;
+  
+    }
+  }
+
+  .searchbuttons  {
+    justify-self: center;
+    padding: 25px 0px 25px 0px;
+  }
+
+  .searchbtn, .luckybtn{
+    padding: 10px 15px 10px 15px;
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+
+  .luckybtn:hover{
+    box-shadow:1px 1px 1px 1px rgb(211, 211, 211);
+  }
+
+  .searchbtn:hover{
+    box-shadow:1px 1px 1px 1px rgb(211, 211, 211);
+  }
+
+  .offeredintxt {
+    justify-self: center;
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .offeredintxt a {
+    text-decoration: none;
+    color: #1a0dab;
+    padding-left: 5px;
+  }
+
+  .offeredintxt a:hover {
+    text-decoration: underline;
   }
